@@ -3,15 +3,24 @@ import Welcome from "./components/Welcome";
 import Test from "./components/Test";
 import Track from "./components/Track";
 import Process from "./components/Process";
+import Layout from "./components/Layout";
+import Main from "./components/Main";
+import SideNav from "./components/SideNav";
+import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ margin: "2rem" }}>
       <h1> Hello React </h1>
       <Welcome />
       <Test />
       <Track />
       <Process />
+      <Layout>
+        <Main />
+        <SideNav />
+        <Login />
+      </Layout>
     </div>
   );
 }
