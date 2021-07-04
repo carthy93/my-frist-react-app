@@ -10,12 +10,17 @@ export default class Login extends Component {
     };
   }
 
+  changeState = () => {
+    this.setState({ isLoggedIn: false });
+  };
+
   render() {
     if (this.state.isLoggedIn) {
       return (
         <>
           <h1>Welcome to React</h1>
-          <Button name="Logout" />
+          {/* <Button name="Logout" onClick={this.changeState()} /> */}
+          <button onClick={this.changeState}>Logout</button>
         </>
       );
     } else {

@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import Main from "./components/Main";
 import SideNav from "./components/SideNav";
 import Login from "./components/Login";
+import Speaker from "./components/Speaker";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Main />
         <SideNav />
         <Login />
+        <Speaker />
       </Layout>
     </div>
   );
