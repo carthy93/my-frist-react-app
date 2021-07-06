@@ -8,22 +8,26 @@ import Main from "./components/Main";
 import SideNav from "./components/SideNav";
 import Login from "./components/Login";
 import Speaker from "./components/Speaker";
+import LifeCycleMethod from "./LifeCycleMethod";
 
 function App() {
   return (
-    <div className="App" style={{ margin: "2rem" }}>
-      <h1> Hello React </h1>
-      <Welcome />
-      <Test />
-      <Track />
-      <Process />
-      <Layout>
-        <Main />
-        <SideNav />
-        <Login />
-        <Speaker />
-      </Layout>
-    </div>
+    <>
+      <div className="App" style={{ margin: "2rem" }}>
+        <h1> Hello React </h1>
+        <Welcome />
+        <Test />
+        <Track />
+        <Process />
+        <Layout>
+          <Main />
+          <SideNav />
+          <Login />
+          <Speaker />
+        </Layout>
+        <LifeCycleMethod />
+      </div>
+    </>
   );
 }
 

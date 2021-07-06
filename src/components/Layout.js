@@ -18,7 +18,7 @@ import Footer from "./Footer";
 //Object destructing   ---- >   props    and    {Props.children}
 export default function Layout({ children }) {
   return (
-    <div>
+    <div style={{ backgroundColor: "lightBlue" }}>
       <Header />
       {children}
       <Footer />
